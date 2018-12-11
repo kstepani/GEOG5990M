@@ -32,7 +32,7 @@ with open('in.txt', newline='') as f:
         environment.append(rowlist)
                    
          
-num_of_agents = 10
+num_of_agents = 100
 num_of_iterations = 100
 neighbourhood = 20
 agents = []
@@ -46,8 +46,8 @@ ax = fig.add_axes([0, 0, 1, 1])
 for i in range(num_of_agents):
     y = int(td_ys[i].text)
     x = int(td_xs[i].text)
-    agents.append(agentframework.Agent(environment,agents,neighbourhood,y,x))
-
+    agents.append(agentframework.Agent(environment,agents,neighbourhood, y, x))
+    
 
 carry_on = True
 
@@ -82,6 +82,7 @@ def gen_function(b = [0]):
 
 #animation = matplotlib.animation.FuncAnimation(fig, update, interval=1, repeat=False, frames=10)
 def run():
+    global animation
     animation = matplotlib.animation.FuncAnimation(fig, update, frames=gen_function, repeat=False)                                                       
     canvas.show()
 

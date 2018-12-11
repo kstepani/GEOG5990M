@@ -1,15 +1,22 @@
 import random
 class Agent(): 
     #initialising x,y,environment,agents
-    def __init__(self, environment, agents, neighbourhood, y, x):
-        self.x=x
-        self.y=y
+    def __init__(self, environment, agents, neighbourhood, y = None, x = None):
         self.environment = environment
         self.store = 0 
         self.agents = agents
         self.neighbourhood = neighbourhood
         
+        if (x == None):
+            self._x = random.randint(0,100)
+        else:
+            self._x = x
         
+        if (y == None):
+            self._y = random.randint(0,100)
+        else:
+            self._y = y
+    
    #define move method      
     def move(self):
         if random.random() < 0.5:
