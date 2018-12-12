@@ -7,5 +7,6 @@ The agents move and interact with their environment and with each other.
 This repository contains:
 1) final_model.py: the final code of the agent-based model
 2) agentframework.py: the module including the Agent class
-3) LICENSE: the license given to the code
-4) index.html: the hand-crafted HTML code for the creation of the online portfolio asked for the assignment
+3) in.txt: an input file containing data
+4) LICENSE: the license given to the code
+5) index.html: the hand-crafted HTML code for the creation of the online portfolio asked for the assignment
