@@ -22,7 +22,6 @@ class Agent():
         self.environment = environment
         self.store = 0 
         self.agents = agents
-        self.neighbourhood = neighbourhood
         
         #if x and y data are missing then randomised values will be given to x and y variables
         if (x == None):
